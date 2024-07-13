@@ -1,0 +1,28 @@
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px var(--h-padding);
+	border-bottom: 1px var(--nav-separator) solid;
+	height: var(--menu-height);
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav a {
+	color: var(--white);
+	list-style: none;
+	display: flex;
+	font-size: var(--nav-font-size);
+	text-decoration: none !important;
+	margin: 0 1.5rem;
+}
+
+nav > a:last-of-type {
+	border: 1px var(--white) solid;
+	padding: 0.5rem 1rem;
+}
