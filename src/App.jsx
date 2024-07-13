@@ -1,68 +1,45 @@
+import { faCalendarDays, faCoffee } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
+import Header from "./components/Header/Header";
+import InfoStrip from "./components/InfoStrip/InfoStrip";
 import Nav from "./components/Nav/Nav";
-
+import { useState } from "react";
+import { faCalendar } from "@fortawesome/free-regular-svg-icons";
+import Footer from "./components/Footer/Footer";
 
 function App() {
+  const [infoStripData, setInfoStripData] = useState([
+    "Angular",
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "NodeJS",
+    "Spring Boot",
+    "Java",
+    "Node-RED",
+    "Selenium",
+    "Puppeteer",
+    "Flyway",
+    "SAP UI 5",
+    "Jira",
+    "Scrum",
+    "Web Design",
+    "MYSQL",
+    "Oracle",
+    "Databases",
+    "jQuery",
+    "Git",
+    "OOP",
+    "Frontend",
+    "Full-Stack",
+    "Figma",
+  ]);
+
   return (
-    <div className="App">
+    <>
       <Nav />
-      <header id="home">
-        <div class="description">
-          <h1 class="highlight-text">
-            have your next page <br />
-            developed by Da Silva
-          </h1>
-          <p>
-            Let me design your website and be <br />
-            responsible for its design, development and <br />
-            maintenance.
-          </p>
-          <button
-            onclick="window.location.hash = 'footer';"
-            id="click-me"
-            class="checkout-btn animate__animated animate__bounce"
-          >
-            check out
-          </button>
-        </div>
-        <img src="assets/img/dasilva.png" alt="" />
-      </header>
-      <div class="dasilva-projects-info">
-        <span class="v-separator"></span>
-        <div class="project-info">
-          <span>+2</span>
-          <div class="description">
-            <img src="assets/img/happy-client-icon.svg" alt="" />
-            <p>
-              HAPPY <br />
-              CLIENTS
-            </p>
-          </div>
-        </div>
-        <span class="v-separator"></span>
-        <div class="project-info">
-          <span>+5</span>
-          <div class="description">
-            <img src="assets/img/project-icon.png" alt="" />
-            <p>
-              PROJECTS <br />
-              DONE
-            </p>
-          </div>
-        </div>
-        <span class="v-separator"></span>
-        <div class="project-info">
-          <span>+10</span>
-          <div class="description">
-            <img src="assets/img/design-icon.png" alt="" />
-            <p>
-              DESGINS <br />
-              DONE
-            </p>
-          </div>
-        </div>
-        <span class="v-separator"></span>
-      </div>
+      <Header />
+      <InfoStrip data={infoStripData} />
       <section id="projects">
         <h1>Projects</h1>
         <div class="content">
@@ -293,71 +270,8 @@ function App() {
           </div>
         </div>
       </section>
-      <footer id="footer">
-        <div id="contacts">
-          <h1>
-            Hendrik Vinicius <br />
-            da Silva Lelis
-          </h1>
-          <div class="contacts">
-            <div class="col">
-              <h5>Social</h5>
-              <ul>
-                <li>
-                  <a href="https://www.linkedin.com/in/hendriklelis/">
-                    Linkedin
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/dasilvadeveloper/">
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/liife_not_found">Twitter</a>
-                </li>
-                <li>
-                  <a href="https://github.com/dasilvadeveloper">Github</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col">
-              <h5>Contacts</h5>
-              <ul>
-                <li>
-                  <a href="tel:+351932723551">+351 932 723 551</a>
-                </li>
-                <li>
-                  <a href="mailto:dasilvadeveloper@icloud.com">
-                    dasilvadeveloper@icloud.com
-                  </a>
-                </li>
-                <li>
-                  <a>@dasilvadeveloper</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <form action="">
-          <h1>Contact</h1>
-          <input type="text" placeholder="Name " />
-          <input type="text" placeholder="Subject" />
-          <textarea placeholder="Message" cols="30" rows="10"></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </footer>
-      <div class="copyright">
-        <p>copyright © 2022 da Silva Developer</p>
-        <p>all rights reserved</p>
-        <p>
-          designed & developed by
-          <a href="https://www.instagram.com/liife_not_found/">
-            <strong>@dasilvadeveloper</strong>
-          </a>
-        </p>
-      </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 

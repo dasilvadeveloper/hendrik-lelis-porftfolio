@@ -1,0 +1,36 @@
+header {
+  height: calc(100vh - var(--menu-height));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px var(--h-padding);
+  overflow: hidden;
+}
+
+header .description {
+  overflow: visible;
+}
+
+header .description p {
+  margin-bottom: 0px;
+}
+
+header .highlight-text {
+  font-size: var(--title-font-size);
+  width: 100%;
+
+  font-family: "April";
+}
+
+header button {
+  padding: 20px 30px;
+  background-color: var(--accent);
+  font-family: "Quicksand";
+  font-size: var(--nav-font-size);
+  font-weight: bolder;
+}
+
+#hendrik_lelis__img {
+  width: 500px;
+  filter: drop-shadow(rgba(255, 255, 255, 0.167) 0 0 1rem)
+}
