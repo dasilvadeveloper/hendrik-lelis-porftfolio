@@ -1,0 +1,47 @@
+
+#about .content .first-part {
+  font-size: 15pt;
+  cursor: pointer;
+}
+
+#secondPart{
+  overflow:hidden;
+  height: 0;
+  transition: all 2s ease;
+}
+
+#about .content p {
+  text-align: justify;
+  margin: 20px 0;
+}
+
+#about .content span {
+  color: var(--accent);
+  font-size: 15pt;
+  cursor: pointer;
+}
+
+#about .content .continuation {
+  display: none;
+}
+
+.fadeout {
+  position: relative;
+  bottom: 10em;
+  height: 10em;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, #101214 97%);
+  margin-bottom: -10em;
+}
+
+.continue__btn {
+  cursor: pointer;
+  user-select: none;
+}
+
+.continue__btn:hover {
+  color: yellow;
+}
+
+.continue__btn:active{
+  color: rgb(189, 189, 0);
+}

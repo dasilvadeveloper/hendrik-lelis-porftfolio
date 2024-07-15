@@ -1,0 +1,16 @@
+section {
+  margin: 3rem var(--h-padding) !important;
+  overflow: hidden;
+}
+
+.title {
+  font-family: "April" !important;
+  display: flex;
+  align-items: center;
+}
+
+.title svg {
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+  color: var(--accent) !important;
+}

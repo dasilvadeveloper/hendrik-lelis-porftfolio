@@ -10,13 +10,14 @@ html {
 
   --h-padding: 15%;
 
-  --nav-font-size: 1.188rem;
-  --text-font-size: 1.25rem;
+  --nav-font-size: 17pt;
+  --text-font-size: 15pt;
   --title-font-size: 4rem;
 
   --menu-height: 110px;
 
   font-family: "Quicksand", sans-serif;
+  font-size: var(--text-font-size) !important;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
 
   color: var(--text-color);
   background-color: #101214;
-  font-size: var(--text-font-size);
+  font-size: var(--text-font-size) !important;
 }
 
 * {
@@ -35,12 +36,20 @@ body {
   font-family: "Quicksand", sans-serif !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  color: var(--text-color);
+}
+
 button {
   outline: none;
   border: none;
   cursor: pointer;
-}
-
-.secondary-text {
-  font-size: 2rem;
 }

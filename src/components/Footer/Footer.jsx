@@ -50,23 +50,28 @@ export default class Footer extends Component {
               </div>
             </div>
           </div>
-          <form action="">
+          <form  action="https://api.staticforms.xyz/submit" method="post">
             <h1>Contact</h1>
-            <input type="text" placeholder="Name " />
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="Message" cols="30" rows="10"></textarea>
+            <input type="hidden" name="accessKey" value="a20e0954-b016-41ac-964d-6b723ccaf44e"></input>
+            <input type="text" required name="name" placeholder="Name " />
+            <input type="hidden" name="redirectTo" value="#"/>
+            <input type="hidden" name="replyTo" value="./"/>
+            <input type="text" required name="subject" placeholder="Subject" />
+            <textarea placeholder="Message" name="$message" cols="30" rows="10"></textarea>
+
             <button type="submit">Submit</button>
           </form>
         </footer>
         <div class="copyright">
-          <p>copyright © 2022 da Silva Developer</p>
+          <p>copyright © {new Date().getFullYear()} Hendrik Lelis</p>
           <p>all rights reserved</p>
           <p>
-            designed & developed by
-            <a href="https://www.instagram.com/liife_not_found/">
-              <strong>@dasilvadeveloper</strong>
+            designed & developed by 
+            <a href="https://www.instagram.com/hendrik.lelis/">
+              <strong> @hendrik.lelis</strong>
             </a>
           </p>
+          <p>v3.0.0</p>
         </div>
       </>
     );

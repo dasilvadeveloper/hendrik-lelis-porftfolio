@@ -1,19 +1,20 @@
 
 .dasilva-projects-info {
-	height: 100px;
+	height: 60px;
 	position: relative;
 	background: var(--accent);
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 3rem;
 }
 
 .dasilva-projects-info .content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: black;
+	color: black ; 
 	width: max-content;
 	animation: strip-movement infinite alternate 60s linear;
 	position: absolute;
@@ -30,8 +31,8 @@
 .dasilva-projects-info .content span {
 	font-family: 'April' !important;
 	font-weight: 900;
-	font-size: 3rem;
-	margin-bottom: 30px;
+	font-size: 1.5rem;
+	color: black ; 
 }
 
 .dasilva-projects-info .content > * {
