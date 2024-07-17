@@ -1,11 +1,10 @@
-
 #about .content .first-part {
   font-size: 15pt;
   cursor: pointer;
 }
 
-#secondPart{
-  overflow:hidden;
+#secondPart {
+  overflow: hidden;
   height: 0;
   transition: all 2s ease;
 }
@@ -42,6 +41,30 @@
   color: yellow;
 }
 
-.continue__btn:active{
+.continue__btn:active {
   color: rgb(189, 189, 0);
 }
+
+.checkout-btn {
+  background: var(--accent);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  font-family: "Quicksand";
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.checkout-btn a {
+  color: black;
+  width: 130px;
+  height: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 

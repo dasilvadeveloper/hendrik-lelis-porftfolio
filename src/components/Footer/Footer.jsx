@@ -54,7 +54,7 @@ export default class Footer extends Component {
             <h1>Contact</h1>
             <input type="hidden" name="accessKey" value="a20e0954-b016-41ac-964d-6b723ccaf44e"></input>
             <input type="text" required name="name" placeholder="Name " />
-            <input type="hidden" name="redirectTo" value="#"/>
+            <input type="hidden" name="redirectTo" value="https://dasilvadeveloper.github.io/hendrik-lelis-porftfolio/  "/>
             <input type="hidden" name="replyTo" value="./"/>
             <input type="text" required name="subject" placeholder="Subject" />
             <textarea placeholder="Message" name="$message" cols="30" rows="10"></textarea>
