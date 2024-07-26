@@ -237,7 +237,7 @@ function App() {
               <img src="public/assets/img/desktop.png" alt="" />
             </div> 
             <button class="checkout-btn">
-            <a href="marine.pt"  >
+            <a href="https://www.marine.pt"  >
               check out <FontAwesomeIcon icon={faLink}/>
             </a>
           </button>
