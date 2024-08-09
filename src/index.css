@@ -46,10 +46,18 @@ p,
 a,
 li {
   color: var(--text-color);
+  font-family: "Quicksand", sans-serif;
 }
 
 button {
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+
+@media only screen and (max-width: 900px) {
+  html{
+    --h-padding: 7%;
+  }
 }

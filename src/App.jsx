@@ -201,7 +201,7 @@ function App() {
       </Section>
 
       <Section title="Projects">
-        <img src="public/assets/img/SLL.png" alt="" />
+        <img src="assets/img/SLL.png" alt="" />
         <span class="h-separator"></span>
         <div class="description">
           <h4>SUNNY LAND LIFE</h4>
@@ -212,18 +212,18 @@ function App() {
         </div>
         <div class="sub-description">
           <div class="platforms">
-            <img src="public/assets/img/desktop.png" alt="" />
+            <img src="assets/img/desktop.png" alt="" />
           </div>
           <button class="checkout-btn">
             <a href="./assets/downloads/jogo.rar" download>
-              check out <FontAwesomeIcon icon={faLink}/>
+              check out <FontAwesomeIcon icon={faLink} />
             </a>
           </button>
         </div>
       </Section>
-  <Section title="Freelancing">
-  <div class="project">
-          <img src="public/assets/img/cbyc.png" alt="" />
+      <Section title="Freelancing">
+        <div class="project">
+          <img src="assets/img/cbyc.png" alt="" />
           <span class="h-separator"></span>
           <div class="description">
             <h4>Coral Boats Yachts Charter</h4>
@@ -231,20 +231,20 @@ function App() {
               Cascais boat tours and fishing. Enjoy unique experiences around
               the Cascais Sea.
             </p>
-          </div> 
+          </div>
           <div class="sub-description">
             <div class="platforms">
-              <img src="public/assets/img/desktop.png" alt="" />
-            </div> 
+              <img src="assets/img/desktop.png" alt="" />
+            </div>
             <button class="checkout-btn">
-            <a href="https://www.marine.pt"  >
-              check out <FontAwesomeIcon icon={faLink}/>
-            </a>
-          </button>
+              <a href="https://www.marine.pt"  >
+                check out <FontAwesomeIcon icon={faLink} />
+              </a>
+            </button>
           </div>
-        </div> 
-  </Section>
-        
+        </div>
+      </Section>
+
 
       <Footer />
     </>

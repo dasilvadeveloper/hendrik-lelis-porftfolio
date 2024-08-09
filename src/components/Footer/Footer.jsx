@@ -51,7 +51,7 @@ export default class Footer extends Component {
             </div>
           </div>
           <form  action="https://api.staticforms.xyz/submit" method="post">
-            <h1>Contact</h1>
+            <h5 className="title">Send-me an email</h5>
             <input type="hidden" name="accessKey" value="a20e0954-b016-41ac-964d-6b723ccaf44e"></input>
             <input type="text" required name="name" placeholder="Name " />
             <input type="hidden" name="redirectTo" value="https://dasilvadeveloper.github.io/hendrik-lelis-porftfolio/  "/>
