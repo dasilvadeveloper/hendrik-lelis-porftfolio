@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/hendrik-lelis-porftfolio/static/css/main.b1e0462b.css",
-    "main.js": "/hendrik-lelis-porftfolio/static/js/main.8d8d3762.js",
-    "index.html": "/hendrik-lelis-porftfolio/index.html",
-    "main.b1e0462b.css.map": "/hendrik-lelis-porftfolio/static/css/main.b1e0462b.css.map",
-    "main.8d8d3762.js.map": "/hendrik-lelis-porftfolio/static/js/main.8d8d3762.js.map"
+    "main.css": "./static/css/main.74fb3939.css",
+    "main.js": "./static/js/main.9bf4d0e2.js",
+    "index.html": "./index.html",
+    "main.74fb3939.css.map": "./static/css/main.74fb3939.css.map",
+    "main.9bf4d0e2.js.map": "./static/js/main.9bf4d0e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1e0462b.css",
-    "static/js/main.8d8d3762.js"
+    "static/css/main.74fb3939.css",
+    "static/js/main.9bf4d0e2.js"
   ]
 }
