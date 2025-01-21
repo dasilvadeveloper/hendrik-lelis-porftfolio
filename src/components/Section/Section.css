@@ -5,7 +5,10 @@ section {
 
 .inlineSroll{
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
+}
+.inline{
+  display: flex;
 }
 
 .title {

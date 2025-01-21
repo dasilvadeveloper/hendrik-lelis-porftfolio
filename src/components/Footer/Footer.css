@@ -60,9 +60,10 @@ textarea {
   background: transparent;
   margin: 5px 0;
   height: 40px;
-  padding: 10px;
+  padding: 1rem;
   outline: #000;
   border: #000 solid 1px;
+  border-radius: .5rem;
 }
 
 footer form textarea {

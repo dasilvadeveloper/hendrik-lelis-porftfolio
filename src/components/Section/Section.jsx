@@ -8,7 +8,7 @@ export default class Section extends Component {
     return (
       <section>
         <Divider icon={faCircle} title={this.props.title} />
-        <div className={this.props.inlineSroll ? "inlineSroll" : ""}>
+        <div className={this.props.orientation}>
           {this.props.children}
         </div>
       </section>

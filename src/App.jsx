@@ -10,6 +10,7 @@ import Section from "./components/Section/Section";
 import Timeline from "./components/Timeline/Timeline";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Project from "./components/Project/Project";
+import Design from "./components/Design/Design";
 
 function App() {
   const [infoStripData, setInfoStripData] = useState([
@@ -224,7 +225,7 @@ function App() {
         <Timeline items={timeLineItems} />
       </Section>
       <span id="projects"></span>
-      <Section title="Projects" inlineSroll >
+      <Section title="Projects" orientation="inlineSroll" >
         <Project
           name="SUNNY LAND LIFE"
           description="A 2D platform game developed in Unity Engine for desktop only."
@@ -263,8 +264,8 @@ function App() {
         />
 
       </Section>
-      
-      <Section title="Freelancing" inlineSroll>
+
+      <Section title="Freelancing" orientation="inlineSroll">
         <Project
           name="Coral Boats Yachts Charter"
           description="Cascais boat tours and fishing. Enjoy unique experiences around the Cascais Sea."
@@ -279,19 +280,23 @@ function App() {
         />
       </Section>
 
-      <Section title="Freelancing" inlineSroll>
-        <Project
-          name="Coral Boats Yachts Charter"
-          description="Cascais boat tours and fishing. Enjoy unique experiences around the Cascais Sea."
-          highlightImg="assets/img/CBYC.png"
-          webAvailable
-        />
-        <Project
-          name="TSBTransfert Platform"
-          description="A complete platform built to transfer money (only numbers) globally. This platform has management of agencies, agents, currencies rates, roles and much more!"
-          highlightImg="assets/img/ttp.jpeg"
-          webAvailable
-        />
+      <Section title="Designs" orientation="inline"> 
+          <div class="Designs gallery-first-part" >
+            <Design highlightImg="assets/img/luminaryit.png" />
+            <Design highlightImg="assets/img/cbf.jpeg" />
+            <Design highlightImg="assets/img/bpf.jpeg" />
+            <Design highlightImg="assets/img/jam.png" />
+            <Design highlightImg="assets/img/maityv2.png" /> 
+            <Design highlightImg="assets/img/lawyer.png" />
+            <Design highlightImg="assets/img/IG1.png" /> 
+            <Design highlightImg="assets/img/IG3.png" /> 
+            <Design highlightImg="assets/img/IG2.png" /> 
+            <Design highlightImg="assets/img/YT.png" /> 
+            <Design highlightImg="assets/img/maity.png" />
+
+          </div>
+          
+
       </Section>
       <Footer />
     </>

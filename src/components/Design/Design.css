@@ -1,0 +1,21 @@
+.DesignContainer {
+  cursor: pointer;
+  max-width: 800px;
+  min-width: 300px;
+  border-radius: 0.5rem;
+  transition: all 0.25s;
+  margin: 1rem;
+}
+.DesignContainer:hover {
+}
+
+.DesignContainer img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.DesignDescription {
+  padding: 1rem;
+  cursor: pointer;
+}
