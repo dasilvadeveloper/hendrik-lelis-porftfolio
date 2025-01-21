@@ -3,6 +3,11 @@ section {
   overflow: hidden;
 }
 
+.inlineSroll{
+  display: flex;
+  overflow-x: scroll;
+}
+
 .title {
   font-family: "April" !important;
   display: flex;
@@ -13,4 +18,26 @@ section {
   font-size: 0.75rem;
   margin-right: 0.5rem;
   color: var(--accent) !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f107;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(52, 52, 52);
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

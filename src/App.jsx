@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 import Section from "./components/Section/Section";
 import Timeline from "./components/Timeline/Timeline";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Project from "./components/Project/Project";
 
 function App() {
   const [infoStripData, setInfoStripData] = useState([
@@ -78,10 +79,10 @@ function App() {
       <Nav />
       <Header />
       <InfoStrip data={infoStripData} />
-
-      <Section title="Who Am I">
-        <div class="first-part">
-          <p>
+      <span id="section2" ></span>
+      <Section title="Who Am I" >
+        <div class="first-part" >
+          <p >
             I entered the world of programming in 2018. I'd never had contact
             with development in my life, in fact I didn't even want to pursue
             programming.
@@ -200,52 +201,59 @@ function App() {
         <Timeline items={timeLineItems} />
       </Section>
 
-      <Section title="Projects">
-        <img src="assets/img/SLL.png" alt="" />
-        <span class="h-separator"></span>
-        <div class="description">
-          <h4>SUNNY LAND LIFE</h4>
-          <p>
-            A 2D platform game developed in Unity Engine for desktop only. Asset
-            credits: @Ansimuz
-          </p>
-        </div>
-        <div class="sub-description">
-          <div class="platforms">
-            <img src="assets/img/desktop.png" alt="" />
-          </div>
-          <button class="checkout-btn">
-            <a href="./assets/downloads/jogo.rar" download>
-              check out <FontAwesomeIcon icon={faLink} />
-            </a>
-          </button>
-        </div>
-      </Section>
-      <Section title="Freelancing">
-        <div class="project">
-          <img src="assets/img/cbyc.png" alt="" />
-          <span class="h-separator"></span>
-          <div class="description">
-            <h4>Coral Boats Yachts Charter</h4>
-            <p>
-              Cascais boat tours and fishing. Enjoy unique experiences around
-              the Cascais Sea.
-            </p>
-          </div>
-          <div class="sub-description">
-            <div class="platforms">
-              <img src="assets/img/desktop.png" alt="" />
-            </div>
-            <button class="checkout-btn">
-              <a href="https://www.marine.pt"  >
-                check out <FontAwesomeIcon icon={faLink} />
-              </a>
-            </button>
-          </div>
-        </div>
-      </Section>
+      <Section title="Projects" inlineSroll>
+        <Project
+          name="SUNNY LAND LIFE"
+          description="A 2D platform game developed in Unity Engine for desktop only."
+          highlightImg="assets/img/SLL.png"
+          credits="Assets credits: @Ansimuz"
+          download="./assets/downloads/jogo.rar"
+          descktopAvailable
+        />
+        <Project
+          name="POKEMON QUIZZ"
+          description="Who's That Pokémon?"
+          highlightImg="assets/img/pq.png"
+          url="https://dasilvadeveloper.github.io/pokemon-quizz/"
+          webAvailable
+        />
+        <Project
+          name="ADEDONHA GAME"
+          description="Just send the game link to your friends and play locally!"
+          highlightImg="assets/img/ag.png"
+          url="https://dasilvadeveloper.github.io/adedonha-game/"
+          webAvailable
+        />
+        <Project
+          name="REAL TIME CLOCK JS"
+          description="Simple real time clock built in JS"
+          highlightImg="assets/img/rtc.png"
+          url="https://dasilvadeveloper.github.io/clock/"
+          webAvailable
+        />
+        <Project
+          name="TIC TAC TOE"
+          description="Play tic tac toe with a friend!"
+          highlightImg="assets/img/ttt.png"
+          url="https://dasilvadeveloper.github.io/tictactoe/"
+          webAvailable
+        />
 
-
+      </Section>
+      <Section title="Freelancing" inlineSroll>
+        <Project
+          name="Coral Boats Yachts Charter"
+          description="Cascais boat tours and fishing. Enjoy unique experiences around the Cascais Sea."
+          highlightImg="assets/img/CBYC.png"
+          webAvailable
+        /> 
+        <Project
+          name="TSBTransfert Platform"
+          description="A complete platform built to transfer money (only numbers) globally. This platform has management of agencies, agents, currencies rates, roles and much more!"
+          highlightImg="assets/img/ttp.jpeg"
+          webAvailable
+        /> 
+      </Section>
       <Footer />
     </>
   );
