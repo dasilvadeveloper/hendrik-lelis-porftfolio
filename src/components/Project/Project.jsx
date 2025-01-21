@@ -19,20 +19,24 @@ export default function Project(props) {
         {props.webAvailable && <img src="assets/img/web.png" alt="" />}
       </div>
       {
-        props.download &&
-        <button class="checkout-btn">
-          <a href={props.download}>
-          <FontAwesomeIcon icon={faDownload} /> download 
-          </a>
-        </button>
-      }
-      {
-        props.url &&
-        <button class="checkout-btn">
-          <a href={props.url}>
-          <FontAwesomeIcon icon={faLink} /> see project
-          </a>
-        </button>
+        (props.download || props.url) && <div className="Actions">
+        {
+          props.download &&
+          <button class="checkout-btn">
+            <a href={props.download}>
+            <FontAwesomeIcon icon={faDownload} /> download 
+            </a>
+          </button>
+        }
+        {
+          props.url &&
+          <button class="checkout-btn">
+            <a href={props.url}>
+            <FontAwesomeIcon icon={faLink} /> see project
+            </a>
+          </button>
+        }
+        </div>
       }
 
     </div>

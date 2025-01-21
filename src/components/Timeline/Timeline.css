@@ -82,6 +82,13 @@ html {
   z-index: 5;
 }
 
+.timeline li {
+  display: flex
+  ;
+      flex-direction: column;
+      justify-content: start;
+}
+
 .timeline li:after {
   content: "";
   display: block;

@@ -6,6 +6,9 @@ nav {
 	padding: 20px var(--h-padding);
 	border-bottom: 1px var(--nav-separator) solid;
 	height: var(--menu-height);
+	position: absolute;
+	z-index: 2;
+	width: 100%;
 }
 
 nav ul {

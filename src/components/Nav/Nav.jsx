@@ -14,16 +14,15 @@ export default class Nav extends Component {
             <a href="#">HOME</a>
           </li>
           <li>
-            <a href="#projects">PROJECTS</a>
+            <a href="#about">ABOUT</a>
           </li>
           <li>
-            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
           </li>
           <li>
             <a href="#contacts">CONTACTS</a>
           </li>
-        </ul>
-        <a href="#footer">Contact</a>
+        </ul> 
       </nav>
     )
   }

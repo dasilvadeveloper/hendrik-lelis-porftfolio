@@ -19,7 +19,7 @@ export default class Header extends Component {
         <img id="hendrik_lelis__img" src="assets/img/dasilva.png" alt="" />
         <div class="scrollButton">
           <p class="scrollIcon"><FontAwesomeIcon icon={faArrowAltCircleDown}></FontAwesomeIcon></p>
-          <a href="#section2">Scroll down</a>
+          <a href="#about">Scroll down</a>
         </div>
       </header>
     );
