@@ -13,7 +13,7 @@ export default class Header extends Component {
           <p>Hello! Welcome to my personal page</p>
           <img src="assets/img/logo.svg" width={250} alt="logo" class="logo-img" />
           <img src="assets/img/logo.svg" alt="logo" width="300px" />
-          <h5><strong>Full-Stack developer</strong></h5>
+          <h5><strong>Front-end developer</strong></h5>
           <p class="mb-5">Here you can see all about me! See my story, experiences and goals.</p>
         </div>
         <img id="hendrik_lelis__img" src="assets/img/dasilva.png" alt="" />
