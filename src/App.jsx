@@ -42,26 +42,27 @@ function App() {
 
   const [timeLineItems, setTimeLineItems] = useState([
     {
-      title: "Software Development @ NTT DATA",
+      title: "Frontend Developer @ NTT DATA",
       location: "Lisbon, Portugal (Remote)",
       description: `
        Collaborated with a team of developers to develop solutions to automate repetitive and time-consuming processes internally and for clients using Node-RED, in order to drastically reduce the time consumption, costs and increase productivity
       |Contributed to attain a silver seal of accessibility focusing in optimizing application accessibility using Angular and Spring Boot.
       |Developed and maintained new features using SAP UI5.
+      |Contributed to the maintenance of 3 projetcts, fixing errors, adjusting features, increasing code coverage.
       |Used testing and automation tools like Puppeteer and Selenium to automate tests and processes`,
       dateFrom: "July 2022",
       dateTo: "Present",
     },
-    {
-      title: "Freelancer @ TSBTransfert",
-      location: "Belgium (Remote)",
-      description: `
-       Designed and developed a user-friendly platform with intuitive navigation, modern visuals & responsive to all devices
-      |Designed a modern look logo
-      |Designed a relational database`,
-      dateFrom: "2023",
-      dateTo: "2023",
-    },
+    // {
+    //   title: "Freelancer @ TSBTransfert",
+    //   location: "Belgium (Remote)",
+    //   description: `
+    //    Designed and developed a user-friendly platform with intuitive navigation, modern visuals & responsive to all devices
+    //   |Designed a modern look logo
+    //   |Designed a relational database`,
+    //   dateFrom: "2023",
+    //   dateTo: "2023",
+    // },
     {
       title: "Software Development @ Mobileum",
       location: "Lisbon, Portugal (Remote)",
@@ -73,19 +74,19 @@ function App() {
       dateFrom: "January 2022",
       dateTo: "July 2022",
     },
-    {
-      title: "Freelancer @ TSBTransfert",
-      location: "Belgium (Remote)",
-      description: `
-       Designed and developed a user-friendly interface with intuitive navigation, modern visuals & responsive to all devices using Figma.
-      |Developed a website for a client that increased their online presence using Angular.
-      |Explored Google Ads improving the search engine rankings and visibility resulted in 150k+ impressions and 5k+ clicks
-      |Developed PT-EN language switch feature
-      |Developed PT-EN language switch feature
-      `,
-      dateFrom: "2022",
-      dateTo: "2022",
-    },
+    // {
+    //   title: "Freelancer @ TSBTransfert",
+    //   location: "Belgium (Remote)",
+    //   description: `
+    //    Designed and developed a user-friendly interface with intuitive navigation, modern visuals & responsive to all devices using Figma.
+    //   |Developed a website for a client that increased their online presence using Angular.
+    //   |Explored Google Ads improving the search engine rankings and visibility resulted in 150k+ impressions and 5k+ clicks
+    //   |Developed PT-EN language switch feature
+    //   |Developed PT-EN language switch feature
+    //   `,
+    //   dateFrom: "2022",
+    //   dateTo: "2022",
+    // },
     {
       title: "Full-Stack Developer @ Contactus",
       location: "Lisbon, Portugal (On-site)",
@@ -263,21 +264,6 @@ function App() {
           webAvailable
         />
 
-      </Section>
-
-      <Section title="Freelancing" orientation="inlineSroll">
-        <Project
-          name="Coral Boats Yachts Charter"
-          description="Cascais boat tours and fishing. Enjoy unique experiences around the Cascais Sea."
-          highlightImg="assets/img/CBYC.png"
-          webAvailable
-        />
-        <Project
-          name="TSBTransfert Platform"
-          description="A complete platform built to transfer money (only numbers) globally. This platform has management of agencies, agents, currencies rates, roles and much more!"
-          highlightImg="assets/img/ttp.jpeg"
-          webAvailable
-        />
       </Section>
 
       <Section title="Designs" orientation="inline"> 
